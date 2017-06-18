@@ -1,0 +1,35 @@
+body {
+  position: relative; /* Required for scroll spy*/
+  padding-top: 50px;
+}
+
+.navbar {
+  padding-top: 0;
+}
+
+.affix {
+  top:0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#mainDiv {
+  max-width: 900px;
+}
+
+/** Allows links and scrollspy to sync up properly **/
+#mainDiv > div {
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}

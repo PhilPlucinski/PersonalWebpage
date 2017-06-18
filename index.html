@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Webpage">
+    <meta name="author" content="Phil Plucinski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <title>Phil Plucinski</title>
+
+    <script>
+      $( document ).ready(function() {
+        // Add smooth scrolling on all links inside the navbar
+        $("#collapsableNav a").on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top}
+                , 500 //millisec
+                , function(){
+                  // Add hash to URL when done scrolling
+                  window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="0">
+    <nav class="navbar navbar-inverse navbar-fixed-top" data-spy="affix">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsableNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Phil Plucinski</a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapsableNav">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="mainDiv" class="container-fluid">
+      <!-- About -->
+      <div id="about">
+        <div class="page-header">
+          <h1>About</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="resources/images/Me.jpg" class="img-responsive img-circle center-block" alt="A picture of me.">
+            <img src="resources/images/ThatsMe.png" class="img-responsive center-block" alt="That's me">
+            <p class="text-center" style="font-size:0.6em;">"That's me" image found on
+              <a href="http://my-ponchoboys.tumblr.com/page/20">My-ponchoboys's Tumblr Page</a></p>
+          </div>
+          <div class="col-md-8">
+            <h2>Hi!</h2>
+            <h4>My name is <b>Phil Plucinski</b> and I am <b>an aspiring software developer</b>.</h4>
+            <br />
+            <h5>I'm currently studying <b>Computer Science</b> at <b>Rutgers University - New Brunswick</b>. I expect to graduate with the <b>Rutgers University Honors College Class of 2019</b>.</h5>
+            <br />
+            <h5>At the moment, my strongest languages are <b>Java</b> and <b>C</b>. Although I have dabbled/am dabbling in HTML/CSS, Javascript, JQuery, PHP, C#, and Python.</h5>
+            <br />
+            <h5>When I'm not studying or coding, you can find me obsessing over my dog Sasha, eating good food with friends, hitting the gym (at least that's the hope), or just driving around.</h5>
+          </div>
+      </div>
+
+      <!-- Projects -->
+      <div id="projects">
+        <div class="page-header">
+          <h1>Projects</h1><h4>(It's a personal work-in-progress)</h4>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 vcenter">
+                <a href="#"><img src="resources/images/PortfolioSite.png" class="img-responsive img-thumbnail center-block" alt="PhilPlucinski.com"></a>
+              </div><!-- Don't want whitespace messing up the flow
+           --><div class="col-md-8 vcenter">
+                <h3>
+                  <span class="vcenter" style="padding-right:10px;">This Website!</span><!--
+               --><span class="vcenter"><a href="#"><img style="vertical-align: middle;" src="resources/images/GitHub-Mark-32px.png" class="img-responsive vcenter" alt="GitHub Logo"></a>
+                  </span>
+                </h3>
+                <br />
+                <h5>How meta! All jokes aside, this really is the first "publishable" thing I've done, so might as well list it, right?</h5>
+                <br />
+                <h6><b>Technologies Used:</b> HTML/CSS, Bootstrap, JQuery</h6>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">Second item</li>
+          <li class="list-group-item">Third item</li>
+        </ul>
+      </div>
+
+      <!-- Resume -->
+      <div id="resume">
+        <div class="page-header">
+          <h1>Resume</h1>
+        </div>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+      </div>
+
+      <!-- Education -->
+      <div id="education">
+        <div class="page-header">
+          <h1>Education</h1>
+        </div>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+      </div>
+    </div>
+  </body>
+</html>
