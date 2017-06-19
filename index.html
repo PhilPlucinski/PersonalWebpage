@@ -42,6 +42,15 @@
             });
           }
         });
+
+        $(".linkButton").hover(function() {
+                $(this).css("background-color", "#000");
+                $(this).children("i").css("color", "#fff");
+                }, function() {
+                $(this).css("background-color", "rgba(0,0,0,0)");
+                $(this).children("i").css("color", "#000");
+        });
+
       });
     </script>
   </head>
@@ -83,7 +92,7 @@
           </div>
           <div class="col-md-8">
             <h2>Hi!</h2>
-            <h4>My name is <b>Phil Plucinski</b> and I am <b>an aspiring software developer</b>.</h4>
+            <h4>My name is <b>Phil Plucinski</b> and I am <b>an aspiring software developer</b> in the <b>Greater New York Area</b>.</h4>
             <br />
             <h5>I'm currently studying <b>Computer Science</b> at <b>Rutgers University - New Brunswick</b>. I expect to graduate with the <b>Rutgers University Honors College Class of 2019</b>.</h5>
             <br />
@@ -562,10 +571,37 @@
             </table>
           </div>
         </div>
-      </div>
+        <hr />
 
-      <br />
-      <br />
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Achievements</h3>
+          </div>
+          <div class="col-md-8">
+            <table id="achievements">
+              <tr>
+                <td><h4>Dean's List</h4></td>
+                <td>Spring 2017; Fall 2016; Spring 2016; Fall 2015</td>
+              </tr>
+              <tr>
+                <td><h4>RU Car Club</h4></td>
+                <td>Vice President, 2017-Present; Event Coordinator, 2015-2017</td>
+              </tr>
+              <tr>
+                <td><h4>RU Honors College Ally</h4></td>
+                <td>Senior Mentor, 2017-Present; Mentor, 2016-2017</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="container-fluid">
+      <h3>Find me elsewhere</h3>
+      <ul>
+        <li><a target="_blank" class="linkButton" href="https://www.linkedin.com/in/PhilPlucinski"><i class="fa fa-fw fa-linkedin"></i></a></td></li>
+        <li><a target="_blank" class="linkButton" href="https://github.com/PhilPlucinski"><i class="fa fa-fw fa-github"></i></a></li>
+      </ul>
     </div>
   </body>
 </html>

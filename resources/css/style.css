@@ -33,3 +33,45 @@ body {
     vertical-align: middle;
     float: none;
 }
+
+#achievements tr td {
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#footer {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+#footer ul {
+  display: inline-block;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+#footer ul li {
+  display: inline;
+}
+
+.linkButton {
+  display: inline-block;
+  border: solid 2px #000;
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
+  position: relative;
+}
+
+.linkButton > i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  color: #000;
+}
