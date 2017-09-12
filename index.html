@@ -22,37 +22,6 @@
     <link rel="stylesheet" href="resources/css/style.css">
 
     <title>Phil Plucinski</title>
-
-    <script>
-      $( document ).ready(function() {
-        // Add smooth scrolling on all links inside the navbar
-        $("#collapsableNav a").on('click', function(event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-            var hash = this.hash;
-
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top}
-                , 500 //millisec
-                , function(){
-                  // Add hash to URL when done scrolling
-                  window.location.hash = hash;
-            });
-          }
-        });
-
-        $(".linkButton").hover(function() {
-                $(this).css("background-color", "#000");
-                $(this).children("i").css("color", "#fff");
-                }, function() {
-                $(this).css("background-color", "rgba(0,0,0,0)");
-                $(this).children("i").css("color", "#000");
-        });
-
-      });
-    </script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="0">
     <nav class="navbar navbar-inverse navbar-fixed-top" data-spy="affix">
@@ -603,5 +572,38 @@
         <li><a target="_blank" class="linkButton" href="https://github.com/PhilPlucinski"><i class="fa fa-fw fa-github"></i></a></li>
       </ul>
     </div>
+
+    <!-- Will move this to separate JS file soon -->
+    <script>
+      $( document ).ready(function() {
+        // Add smooth scrolling on all links inside the navbar
+        $("#collapsableNav a").on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top}
+                , 500 //millisec
+                , function(){
+                  // Add hash to URL when done scrolling
+                  window.location.hash = hash;
+            });
+          }
+        });
+
+        $(".linkButton").hover(function() {
+                $(this).css("background-color", "#000");
+                $(this).children("i").css("color", "#fff");
+                }, function() {
+                $(this).css("background-color", "rgba(0,0,0,0)");
+                $(this).children("i").css("color", "#000");
+        });
+
+      });
+    </script>
+
   </body>
 </html>
