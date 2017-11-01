@@ -34,7 +34,7 @@ body {
     float: none;
 }
 
-#achievements tr td {
+#achievements #volunteering tr td {
   padding-right: 10px;
   padding-bottom: 10px;
 }
